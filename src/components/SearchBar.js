@@ -18,6 +18,7 @@ class SearchBar extends Component {
             <div>
                  <form onSubmit={this.onSubmitSearch}>
                     <input placeholder="Search Movie"  onChange={(e)=>{this.props.movie.movieName=(e.target.value) }}>{}</input>
+                    <button style={{marginLeft:"5px"}} onClick={this.onSubmitSearch}>Search</button>
                 </form>
             </div>
         )
