@@ -1,0 +1,38 @@
+.relatedVideoContainer{
+  display: flex;
+  flex-direction: row;
+
+   
+}
+.relatedMoviesContainer{
+  border-top: 2px solid black;
+  margin-top: 2rem;
+
+}
+.relatedMovie{
+  
+  
+  margin-right:  5px ;
+  text-align: center;
+  
+  
+}
+li{
+  
+  list-style-type: none;
+  
+}
+
+
+button{
+box-shadow: 2px;
+}
+.searchBar{
+  display:flex;
+  float:right;
+  width:40%;
+  text-Align:center;
+}
+.movieDetails{
+  background-color: rgb(110, 153, 233);
+}
