@@ -8,14 +8,13 @@ import "./style.css"
 class RelatedMovie extends Component {
 
     componentWillMount() {
-        console.log("Movi  sdcsdvwdv ")
         this.props.fetchRelatedMovies("");
-        
+
     }
     render() {
 
         const movies = this.props.movie.relatedItems.results
-             return (
+        return (
             (movies) ?
                 <div className="container">
                     <ul className="row list-group text-center">
@@ -29,7 +28,7 @@ class RelatedMovie extends Component {
                                 <div className="font-weight-bold">Rating: {x.vote_average}</div>
                                 <div>
                                     <button className="btn btn-outline-success" >Play</button>
-                                    <button className="btn btn-outline-info " >Watch Later</button>
+                                    <button className="btn btn-outline-info ml-2 mr-2" >Watch Later</button>
                                     <button className="btn btn-outline-secondary" >Share</button>
                                 </div>
                                 <p className="list-group-item-text"> {x.overview}</p>
@@ -38,7 +37,7 @@ class RelatedMovie extends Component {
                         </li>)}
                     </ul>
                 </div> : <div>
-                  Loading...
+                    Loading...
                 </div>
         )
 

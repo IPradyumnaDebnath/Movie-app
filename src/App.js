@@ -4,7 +4,8 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 import RelatedMovie from './components/RelatedMovie';
-import SearchBar from './components/SearchBar'
+import SearchBar from './components/SearchBar';
+
 function App() {
   return (<Provider store={store}>
     <div className="App">

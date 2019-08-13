@@ -1,8 +1,8 @@
-import { FETCH_MOVIE, FETCH_RELATED_MOVIES,SEARCH_UPDATE } from '../actions/types';
+import { FETCH_MOVIE, FETCH_RELATED_MOVIES, SEARCH_UPDATE } from '../actions/types';
 
 
 const initialState = {
-    movieName:"",
+    movieName: "",
     item: {},
     relatedItems: []
 }
@@ -16,19 +16,17 @@ export default function (state = initialState, action) {
                 item: action.payload
             });
         case FETCH_RELATED_MOVIES:
-                console.log("REST",action.payload);
             return ({
                 ...state,
                 relatedItems: action.payload
             });
         case SEARCH_UPDATE:
-                console.log("HAAA",action.movieName);
-            return({
+            return ({
                 ...state,
                 movieName: action.movieName,
-               
-                
-            })    
+
+
+            })
 
 
         default:

@@ -16,7 +16,7 @@ class SearchBar extends Component {
     render() {
         return (
             <div >
-                 <form className="row text-center d-flex  justify-content-end mr-2" onSubmit={this.onSubmitSearch}>
+                 <form className="row text-center d-flex  justify-content-center mr-2" onSubmit={this.onSubmitSearch}>
                     <input className="col-md-3 text-center" placeholder="Search Movie"  onChange={(e)=>{this.props.movie.movieName=(e.target.value) }}>{}</input>
                     <button className=" col-md-1 btn-secondary" type="submit" style={{marginLeft:"5px"}} onClick={this.onSubmitSearch}>Search</button>
                 </form>
