@@ -3,21 +3,17 @@ import { connect } from 'react-redux';
 import { fetchMovie } from '../actions/moiveSearchAction';
 import "./style.css"
 class Synopsis extends Component {
-  
+
     render() {
-        const movies = this.props.movie.item
-        console.log("HHHHH",movies)
-        if (movies) {
-            return (
+        const movies = this.props.coms
+
+        return (
+            (movies) ?
                 <div>
-                   
-                   {movies.overview}
-                    
-                </div>
-            )
-        } else {
-            return <div></div>
-        }
+                    {movies.overview}
+                </div> : <div>Loading...</div>
+        )
+
     }
 }
 
